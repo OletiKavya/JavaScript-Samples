@@ -1,18 +1,28 @@
 function calc(){
 
-const a=parseFloat(document.getElementById("num1").value);
-const b=parseFloat(document.getElementById("num2").value);
+const x=parseFloat(document.getElementById("num1").value);
+const y=parseFloat(document.getElementById("num2").value);
+const operation = document.querySelector('input[name="operation"]:checked').value;
 
-const add=a+b;
-const sub=a-b;
-const mult=a*b;
-const div=a/b;
+let result;
+console.log(x,y,operation)
+switch(operation) {
+    case 'addition':
+        result = `Addition: ${x + y}`;
+        break;
+    case 'subtraction':
+        result = `Subtraction: ${x - y}`;
+        break;
+    case 'multiplication':
+        result = `Multiplication: ${x * y}`;
+        break;
+    case 'division':
+        result = y !== 0 ? `Division: ${x / y}` : 'Cannot divide by zero';
+        break;
+    default:
+        result = 'Please select an operation.';
+}
 
-console.log(a,b,add,sub,mult,div)
-
-document.getElementById("Result").innerHTML=`Addition: ${add}<br>
-                Subtraction: ${sub}<br>
-                Multiplication: ${mult}<br>
-                Division: ${div}`;
+document.getElementById("Result").innerHTML = result;
 
 }

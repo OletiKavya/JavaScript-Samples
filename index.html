@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
     <title>Simple Calculator</title>
 </head>
 <body>
@@ -16,6 +18,15 @@
     <input type="number" id="num2" >
     <br>
     <br>
+    <label>Select operation:</label><br>
+        <input type="radio" id="addition" name="operation" value="addition">
+        <label for="addition">Addition</label><br>
+        <input type="radio" id="subtraction" name="operation" value="subtraction">
+        <label for="subtraction">Subtraction</label><br>
+        <input type="radio" id="multiplication" name="operation" value="multiplication">
+        <label for="multiplication">Multiplication</label><br>
+        <input type="radio" id="division" name="operation" value="division">
+        <label for="division">Division</label><br><br>
     <button type="button" onclick="calc()">Calculate</button>
    </form>
 <p id="Result"></p>
