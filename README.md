@@ -4,7 +4,7 @@ Hello! 👋 This repository features a range of JavaScript projects that I'm act
 
 🔧 **Currently Included**:
 - A functional calculator
-- A basic to-do list
+- A Contact Me Form
 
 This repository is a work in progress, and I'll be continuously adding new features and improvements. Feel free to dive into the code, experiment, and share your feedback!
 
